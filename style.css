@@ -1,0 +1,353 @@
+body {
+  margin: 0;
+  font-family: Montserrat;
+  background-color: #1B1A17;
+  overflow-x: hidden;
+}
+@keyframes infHeader {
+  0% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: 8.43%;
+  }
+}
+@keyframes bull {
+  0% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+@keyframes join {
+  0% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+@keyframes join_text {
+  0% {
+    margin-left: 200%;
+  }
+  100% {
+    margin-left: 12.76%;
+    text-align: center;
+  }
+}
+@keyframes stats {
+  0% {
+    margin-left: 200%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+@keyframes our_ambition {
+  0% {
+    margin-left: 200%;
+  }
+  100% {
+    margin-left: 8.43%;
+  }
+}
+@keyframes scaling {
+  0% {
+    opacity: 0;
+    scale: 0.5;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+header {
+  width: 100%;
+  background-image: url('src/FirstBackground.png');
+  background-color: #1B1A17;
+  background-size: 100%;
+  height: 68vw;
+}
+header span {
+  color: #F0A500;
+}
+header .layer {
+  display: none;
+}
+header .navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  animation: navbar 1s;
+}
+header .navbar img {
+  margin-left: 8.43%;
+  height: 6.5vw;
+}
+header .navbar .links {
+  margin-left: 31.25%;
+  width: 100%;
+}
+header .navbar .burger {
+  display: none;
+}
+header .navbar a {
+  color: #FFF;
+  font-family: Montserrat;
+  margin-left: 4.11%;
+  font-size: 1.2vw;
+  font-weight: 700;
+  text-decoration: none;
+}
+header .inf {
+  width: 41%;
+  margin-left: 8.43%;
+  margin-top: 10vw;
+  animation: infHeader 1s;
+}
+header .inf h1 {
+  color: white;
+  font-size: 3.4vw;
+  font-weight: 700;
+}
+header .inf p {
+  margin-top: 4.2vw;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 1.8vw;
+  font-weight: 600;
+  margin-bottom: 8.1vw;
+}
+header .inf a {
+  padding: 0.5vw;
+  padding-left: 3.5vw;
+  padding-right: 3.5vw;
+  background-color: #E6D5B8;
+  text-decoration: none;
+  border-radius: 5%;
+  color: #1B1A17;
+  font-family: Montserrat;
+  font-size: 1.7vw;
+  font-weight: 600;
+}
+main {
+  background-color: #1B1A17;
+}
+main .about_us {
+  width: 100%;
+  background-image: url('src/SecondBackground.png');
+  height: 62.5vw;
+}
+main .about_us .text_block {
+  text-align: center;
+  width: 83.125%;
+  margin-left: 8.43%;
+  font-size: 1.7vw;
+  color: #FFF;
+  padding-top: 10.7vw;
+}
+main .about_us .text_block:nth-child(2).animate {
+  animation: our_ambition 1s;
+}
+main .about_us .text_block:first-child.animate {
+  animation: infHeader 1s;
+}
+main .about_us .text_block h1 {
+  font-weight: 700;
+  margin: 0;
+}
+main .about_us .text_block p {
+  font-weight: 600;
+}
+main h1 {
+  color: #FFF;
+  text-align: center;
+  font-size: 1.9vw;
+  font-weight: 700;
+}
+main .roadmap {
+  margin-left: 25.3vw;
+  width: 50%;
+  padding-top: 6.2vw;
+  padding-bottom: 14.2vw;
+}
+main .roadmap img {
+  padding-top: 6vw;
+  width: 100%;
+  padding-bottom: 7vw;
+}
+main .roadmap img.animate {
+  animation: scaling 1s;
+}
+main .roadmap a {
+  padding: 0.5vw;
+  padding-left: 3.5vw;
+  padding-right: 3.5vw;
+  background-color: #E6D5B8;
+  text-decoration: none;
+  border-radius: 5%;
+  color: #1B1A17;
+  font-family: Montserrat;
+  font-size: 1.7vw;
+  font-weight: 600;
+  margin-left: 40%;
+}
+main .economics {
+  display: grid;
+  grid-template-columns: 28.65% 49.5%;
+  width: 100%;
+  justify-content: center;
+  grid-column-gap: 5%;
+  margin-top: 10.7vw;
+  padding-bottom: 17.4vw;
+}
+main .economics img {
+  width: 100%;
+}
+main .economics img:nth-child(2).animate {
+  animation: stats 1s;
+}
+main .economics img:first-child.animate {
+  animation: bull 1s;
+}
+main p {
+  width: 74.4%;
+  margin: 0;
+  padding-bottom: 7.1vw;
+  margin-left: 12.76%;
+  color: #FFF;
+  text-align: center;
+  font-size: 1.9vw;
+  font-weight: 700;
+}
+main .join.animate {
+  animation: join 1s;
+}
+main .join_text.animate {
+  animation: join_text 1s;
+}
+footer {
+  color: white;
+  width: 91.56%;
+  padding-left: 8.44%;
+}
+footer.animate {
+  animation: scaling 1s;
+}
+footer .textline {
+  display: flex;
+  width: 100%;
+}
+footer .textline button {
+  background-color: #F0A500;
+  width: 10.5vw;
+  height: 3.13vw;
+  color: #1B1A17;
+  font-size: 1.9vw;
+  font-weight: 700;
+  border-width: 0;
+  border-radius: 0.3vw;
+}
+footer .media {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 15.8% 15.8%;
+  grid-column-gap: 1.1%;
+  align-items: center;
+  margin-top: 3.3vw;
+  height: 3.15vw;
+  padding-bottom: 10vw;
+}
+footer .media a {
+  background-color: #E45826;
+  width: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-top: 0.3vw;
+  padding-bottom: 0.3vw;
+  color: #FFF;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 0.3vw;
+}
+footer .media a p {
+  margin: 0;
+  margin-top: 3%;
+  font-size: 1.3vw;
+  width: 100%;
+  text-align: center;
+}
+footer .media a img {
+  margin-left: 10%;
+  width: 2.7vw;
+}
+footer p {
+  font-size: 1.9vw;
+  margin: 0;
+  margin-right: 3.125%;
+}
+@media (max-width: 430px) {
+  header {
+    height: 215vw;
+    background-size: 350%;
+    background-position: 50%;
+  }
+  header .layer {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Black color with 10% opacity */
+    z-index: 2;
+    /* Make sure it's above the block content */
+  }
+  header .navbar .burger {
+    display: block;
+    margin-left: 50vw;
+    z-index: 3;
+  }
+  header .navbar .burger.closed {
+    display: none;
+  }
+  header .navbar img {
+    width: 16.3vw;
+    height: auto;
+  }
+  header .navbar .links {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    top: 100px;
+    z-index: 5;
+    margin-left: 30%;
+    width: 70%;
+  }
+  header .navbar .links a {
+    font-size: 5.2vw;
+    margin-top: 14vw;
+  }
+  header .inf {
+    width: 83%;
+  }
+  header .inf h1 {
+    font-size: 9.3vw;
+  }
+  header .inf p {
+    font-size: 4.65vw;
+  }
+  header .inf a {
+    padding: 2.3vw;
+    padding-left: 15.8vw;
+    padding-right: 15.8vw;
+    font-size: 7.5vw;
+    border-radius: 1.16vw;
+  }
+}
